@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product and Filter Search</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div id="search-container">
+        <input
+          type="search"
+          id="search-input"
+          placeholder="Search product name here.."
+        />
+        <button id="search">Search</button>
+      </div>
+      <div id="buttons">
+        <button class="button-value" onclick="filterProduct('all')">All</button>
+        <button class="button-value" onclick="filterProduct('Topwear')">Topwear</button>
+        <button class="button-value" onclick="filterProduct('Bottomwear')">Bottomwear</button>
+        <button class="button-value" onclick="filterProduct('Jacket')">Jacket</button>
+        <button class="button-value" onclick="filterProduct('Jewellery')">Jewellery</button>
+        <!--<button class="button-value" onclick="filterProduct('Cashmere')">Cashmere</button>
+        <button class="button-value" onclick="filterProduct('Leather')">Leather</button>-->
+      </div>
+      <div id="products"></div>
+    </div>
+    <!-- script -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
